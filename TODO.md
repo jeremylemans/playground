@@ -1,26 +1,26 @@
 ### Things to check
 
-- [] Workout that postinstall script in 'package.json'
-- [] Do we need to use jest and the 'firsttris.vscode-jest-runner' extension?
-- [] What are '.babelrc' and '.swcrc' in 'apps/my-web-app' for? Do I need them?
-- [] Do I really need 'package.json' in 'apps/my-web-app' and 'apps/my-web-app-e2e'? Shouldn't I have 'project.json' instead?
-- [] Why is 'my-web-app' prefixed with '@playground/' in 'apps/my-web-app-e2e/playwright.config.ts' at line 27?
-- [] Why no 'test' target in 'libs/ui/project.json' like in branch 'nx-workspace-angular'?
-- [] Why is 'tsconfig.spec.json' in 'libs/ui' extending '../../tsconfig.base.json' instead of './tsconfig.json'?
-- [] Why is 'tsconfig.lib.json' outputing to a root directory '../../dist/out-tsc'?
-- [] Should we have 'plugins: [angular(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],' at line 8 of 'libs/ui/vite.config.mts' as in branch 'nx-workspace-angular'?
-- [] Should I have a .editorconfig at the root?
-- [] 'nx.json' is way too different from the one in branch 'nx-workspace-angular'
-  - [] Fix '"dependsOn": ["^build", "^build"]' at line 60?
-- [] Root 'package.json' has or misses some things I don't understand
-  - [] Why no '"@nx/workspace": "20.5.0"' in devDependencies like in branch 'nx-workspace-angular'?
-  - [] Why a 'less' devDependency here and not in branch 'nx-workspace-angular'?
-  - [] What is '"swc-loader": "0.1.15"' for?
-  - [] Why and what for is '"workspaces": ["packages/*", "apps/*"]'?
-- [] Root 'tsconfig.base.json' is way too different from the one in branch 'nx-workspace-angular'
-  - [] "composite" is set to true, if it was unset or false then I wouldn't need the 'NX_IGNORE_UNSUPPORTED_TS_SETUP=true' workaround in '.env'. However, having it set to true seems the right thing, is it?
-  - [] Should we have a 'rootDir' key?
-  - [] Have "dom" in 'compilerOptions.lib' and revert the workaround with 'apps/my-web-app/tsconfig.base.json' in the middle.
-  - [] Verify 'module', 'target', and 'lib' mismatches, what the f*** are they for?
-  - [] Should I have '"exclude": ["node_modules", "tmp"]'?
-  - [] Why do we even have a root 'tsconfig.json' on our branch?
+- [ ] Workout that postinstall script in 'package.json'
+- [ ] Do we need to use jest and the 'firsttris.vscode-jest-runner' extension?
+- [ ] What are '.babelrc' and '.swcrc' in 'apps/my-web-app' for? Do I need them?
+- [ ] Do I really need 'package.json' in 'apps/my-web-app' and 'apps/my-web-app-e2e'? Shouldn't I have 'project.json' instead?
+- [ ] Why is 'my-web-app' prefixed with '@playground/' in 'apps/my-web-app-e2e/playwright.config.ts' at line 27?
+- [ ] Why no 'test' target in 'libs/ui/project.json' like in branch 'nx-workspace-angular'?
+- [ ] Why is 'tsconfig.spec.json' in 'libs/ui' extending '../../tsconfig.base.json' instead of './tsconfig.json'?
+- [ ] Why is 'tsconfig.lib.json' outputing to a root directory '../../dist/out-tsc'?
+- [ ] Should we have 'plugins: [angular(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],' at line 8 of 'libs/ui/vite.config.mts' as in branch 'nx-workspace-angular'?
+- [ ] Should I have a .editorconfig at the root?
+- [ ] 'nx.json' is way too different from the one in branch 'nx-workspace-angular'
+  - [ ] Fix '"dependsOn": ["^build", "^build"]' at line 60?
+- [ ] Root 'package.json' has or misses some things I don't understand
+  - [ ] Why no '"@nx/workspace": "20.5.0"' in devDependencies like in branch 'nx-workspace-angular'?
+  - [ ] Why a 'less' devDependency here and not in branch 'nx-workspace-angular'?
+  - [ ] What is '"swc-loader": "0.1.15"' for?
+  - [ ] Why and what for is '"workspaces": ["packages/*", "apps/*"]'?
+- [ ] Root 'tsconfig.base.json' is way too different from the one in branch 'nx-workspace-angular'
+  - [ ] "composite" is set to true, if it was unset or false then I wouldn't need the 'NX_IGNORE_UNSUPPORTED_TS_SETUP=true' workaround in '.env'. However, having it set to true seems the right thing, is it?
+  - [ ] Should we have a 'rootDir' key?
+  - [ ] Have "dom" in 'compilerOptions.lib' and revert the workaround with 'apps/my-web-app/tsconfig.base.json' in the middle.
+  - [ ] Verify 'module', 'target', and 'lib' mismatches, what the f*** are they for?
+  - [ ] Should I have '"exclude": ["node_modules", "tmp"]'?
+  - [ ] Why do we even have a root 'tsconfig.json' on our branch?
