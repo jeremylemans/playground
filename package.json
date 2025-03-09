@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npx playwright install && npx playwright install-deps"
+    "postinstall": "npx playwright install --with-deps"
   },
   "private": true,
   "devDependencies": {
