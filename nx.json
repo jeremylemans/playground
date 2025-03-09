@@ -57,7 +57,7 @@
   ],
   "targetDefaults": {
     "test": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build", "^build"]
     },
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
@@ -69,6 +69,13 @@
       "linter": "eslint",
       "unitTestRunner": "vitest",
       "e2eTestRunner": "playwright"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "vitest"
+    },
+    "@nx/angular:component": {
+      "style": "css"
     }
   }
 }
